@@ -12,11 +12,7 @@ import { usePathname } from 'next/navigation';
 // Depending on the size of the application, this would be stored in a database.
 const links = [
   { name: 'Home', href: '/dashboard', icon: HomeIcon },
-  {
-    name: 'Invoices',
-    href: '/dashboard/invoice',
-    icon: DocumentDuplicateIcon,
-  },
+  { name: 'Invoices', href: '/dashboard/invoice', icon: DocumentDuplicateIcon },
   { name: 'Customers', href: '/dashboard/customer', icon: UserGroupIcon },
 ];
 
@@ -45,3 +41,6 @@ export default function NavLinks() {
     </>
   );
 }
+
+// Next.js uses file-system routing where folders are used to create nested routes. 
+// Each folder represents a route segment that maps to a URL segment.
